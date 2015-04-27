@@ -17,35 +17,29 @@ L.OSM.Map = L.Map.extend({
     var donate = I18n.t('javascripts.map.donate_link_text', {donate_url: 'http://donate.openstreetmap.org'});
 
     this.baseLayers = [
+      new L.OSM.Historical({
+        attribution: "<a href='http://wiki.openstreetmap.org/wiki/OHM'>OHM</a>",
+        keyid: "historical",
+        code: "H",
+        name: I18n.t("javascripts.map.base.historical")
+      }),
       new L.OSM.Mapnik({
         attribution: copyright + " &hearts; " + donate,
         code: "M",
         keyid: "mapnik",
         name: I18n.t("javascripts.map.base.standard")
       }),
-      new L.OSM.CycleMap({
-        attribution: copyright + ". Tiles courtesy of <a href='http://www.thunderforest.com/' target='_blank'>Andy Allan</a>",
-        code: "C",
-        keyid: "cyclemap",
-        name: I18n.t("javascripts.map.base.cycle_map")
+     new L.OSM.OHM_2008({
+        attribution:  "<a href='http://wiki.openstreetmap.org/wiki/OHM'>OHM</a>",
+        code: "8",
+        keyid: "ohm_2008",
+        name: I18n.t("javascripts.map.base.2008")
       }),
-      new L.OSM.TransportMap({
-        attribution: copyright + ". Tiles courtesy of <a href='http://www.thunderforest.com/' target='_blank'>Andy Allan</a>",
-        code: "T",
-        keyid: "transportmap",
-        name: I18n.t("javascripts.map.base.transport_map")
-      }),
-      new L.OSM.MapQuestOpen({
-        attribution: copyright + ". Tiles courtesy of <a href='http://www.mapquest.com/' target='_blank'>MapQuest</a> <img src='https://developer.mapquest.com/content/osm/mq_logo.png'>",
-        code: "Q",
-        keyid: "mapquest",
-        name: I18n.t("javascripts.map.base.mapquest")
-      }),
-      new L.OSM.HOT({
-        attribution: copyright + ". Tiles courtesy of <a href='http://hot.openstreetmap.org/' target='_blank'>Humanitarian OpenStreetMap Team</a>",
-        code: "H",
-        keyid: "hot",
-        name: I18n.t("javascripts.map.base.hot")
+     new L.OSM.OHM_2009({
+        attribution:  "<a href='http://wiki.openstreetmap.org/wiki/OHM'>OHM</a>",
+        code: "9",
+        keyid: "ohm_2009",
+        name: I18n.t("javascripts.map.base.2009")
       })
     ];
 
