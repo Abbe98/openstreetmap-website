@@ -239,8 +239,8 @@ en:
     timeout:
       sorry: "Sorry, the list of changesets you requested took too long to retrieve."
     rss:
-      title_all: OpenStreetMap changeset discussion
-      title_particular: "OpenStreetMap changeset #%{changeset_id} discussion"
+      title_all: OpenHistoricalMap changeset discussion
+      title_particular: "OpenHistoricalMap changeset #%{changeset_id} discussion"
       comment: "New comment on changeset #%{changeset_id} by %{author}"
       commented_at_html: "Updated %{when} ago"
       commented_at_by_html: "Updated %{when} ago by %{user}"
@@ -303,14 +303,14 @@ en:
       edit: "Edit"
     feed:
       user:
-        title: "OpenStreetMap diary entries for %{user}"
-        description: "Recent OpenStreetMap diary entries from %{user}"
+        title: "OpenHistoricalMap diary entries for %{user}"
+        description: "Recent OpenHistoricalMap diary entries from %{user}"
       language:
-        title: "OpenStreetMap diary entries in %{language_name}"
-        description: "Recent diary entries from users of OpenStreetMap in %{language_name}"
+        title: "OpenHistoricalMap diary entries in %{language_name}"
+        description: "Recent diary entries from users of OpenHistoricalMap in %{language_name}"
       all:
-        title: "OpenStreetMap diary entries"
-        description: "Recent diary entries from users of OpenStreetMap"
+        title: "OpenHistoricalMap diary entries"
+        description: "Recent diary entries from users of OpenHistoricalMap"
     comments:
       has_commented_on: "%{display_name} has commented on the following diary entries"
       post: Post
