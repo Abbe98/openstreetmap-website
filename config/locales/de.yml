@@ -25,6 +25,7 @@
 # Author: Kerosin
 # Author: Kghbln
 # Author: Markobr
+# Author: MarkusHD
 # Author: McDutchie
 # Author: Metalhead64
 # Author: Michi
@@ -380,7 +381,7 @@ de:
         advice: 'Falls der obenstehende Export fehlschlägt, erwäge bitte, eine der
           unten aufgelisteten Quellen zu verwenden:'
         body: Dieser Bereich ist zu groß, um als OpenStreetMap-XML-Daten exportiert
-          werden. Bitte heranzoomen, einen kleineren Bereich wählen oder eine der
+          zu werden. Bitte heranzoomen, einen kleineren Bereich wählen oder eine der
           folgenden Quellen für Massendatendownloads nutzen.
         planet:
           title: Planet OSM
@@ -1152,6 +1153,14 @@ de:
       tag_html: |-
         Ein <strong>tag</strong> ist eine Eigenschaft, die man einem Objekt zuweist. Z.B. der Name eines Restaurants
         oder die maximal erlaubte Geschwindigkeit auf einer Straße.
+    rules:
+      title: Regeln!
+      paragraph_1_html: "OpenStreetMap hat nur wenige formale Regeln, aber wir erwarten,
+        dass alle Teilnehmer\nmit der Gemeinschaft zusammenarbeiten und kommunizieren.
+        Falls du andere Aktivitäten erwägst\nals per Hand zu bearbeiten, lies und
+        folge bitte den Richtlinien zu\n<a href=\"http://wiki.openstreetmap.org/wiki/DE:Import/Guidelines\">Importen</a>
+        und \n<a href=\"http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct\">automatischen
+        Bearbeitungen</a>."
     questions:
       title: Fragen?
       paragraph_1_html: |-
@@ -1207,22 +1216,18 @@ de:
       title: help.openstreetmap.org
       description: Stelle eine Frage oder suche nach Antworten auf der OSM-Fragen-und-Antworten-Seite.
     mailing_lists:
-      url: http://lists.openstreetmap.org/
       title: Mailinglisten
       description: Stelle eine Frage und diskutiere interessante Sachen zu einem weiten
         Bereich von thematischen oder regionalen Mailinglisten.
     forums:
-      url: http://forum.openstreetmap.org/
       title: Foren
       description: Fragen und Diskussionen für diejenigen, die eine Oberfläche in
         der Art einer Anschlagstafel bevorzugen.
     irc:
-      url: http://irc.openstreetmap.org/
       title: IRC
       description: Interaktiver Chat in vielen unterschiedlichen Sprachen und zu vielen
         Themen.
     switch2osm:
-      url: https://switch2osm.org/
       title: Zu OSM wechseln
       description: Hilfe für auf Karten und anderen Diensten gegründeten Unternehmen
         und Organisationen, die zu OpenStreetMap wechseln.
@@ -2103,8 +2108,8 @@ de:
       success: Wir haben eine neue Bestätigungsnachricht an %{email} gesendet. Sobald
         du dein Benutzerkonto bestätigt hast, kannst du mit dem Kartieren beginnen.<br
         /><br />Sofern du ein Antispamsystem nutzt, das selbst Bestätigungen anfordert,
-        musst du <webmaster@openstreetmap.org> auf dessen Positivliste setzten, da
-        wir auf keine Bestätigungsanfragen reagieren können.
+        musst du webmaster@openstreetmap.org auf dessen Positivliste setzen, da wir
+        auf keine Bestätigungsanfragen reagieren können.
       failure: Benutzer %{name} konnte nicht gefunden werden.
     confirm_email:
       heading: Änderung der E-Mail-Adresse bestätigen
@@ -2278,6 +2283,8 @@ de:
       heading: '%{block_on} gesperrt durch %{block_by}'
       time_future: Endet in %{time}
       time_past: Geendet vor %{time}
+      created: Erstellt
+      ago: vor %{time}
       status: Status
       show: anzeigen
       edit: Bearbeiten
@@ -2329,6 +2336,7 @@ de:
       link: Link oder HTML
       long_link: Link
       short_link: Kurz-URL
+      geo_uri: Geo-URI
       embed: HTML
       custom_dimensions: Ausschnitt festlegen
       format: 'Format:'
@@ -2414,32 +2422,32 @@ de:
         no_route: Wir konnten keine Strecke zwischen diesen beiden Orten berechnen.
         no_place: Wir konnten den Ort nicht finden.
       instructions:
-        continue_on: Weiter auf&nbsp;
-        slight_right: Rechts halten auf
-        turn_right: Rechts abbiegen auf&nbsp;
-        sharp_right: Scharf rechts auf
-        uturn: U-turn along
-        sharp_left: Scharf links auf
-        turn_left: Links abbiegen auf&nbsp;
-        slight_left: Links halten auf
-        via_point: (via point)
-        follow: Folge&nbsp;
-        roundabout: Im Kreisverkehr nehme&nbsp;
-        leave_roundabout: Verlasse den Kreisverkehr -
-        stay_roundabout: Stay on roundabout -
-        start: Start at end of
-        destination: Ziel erreicht
-        against_oneway: Go against one-way on
-        end_oneway: Ende der Einbahnstrasse
-        exit: '%{exit} verlassen'
-        unnamed: (unbekannt)
+        continue_without_exit: Weiter auf %{name}
+        slight_right_without_exit: Leicht rechts auf %{name}
+        turn_right_without_exit: Rechts abbiegen auf %{name}
+        sharp_right_without_exit: Scharf rechts auf %{name}
+        uturn_without_exit: Umkehren entlang %{name}
+        sharp_left_without_exit: Scharf links auf %{name}
+        turn_left_without_exit: Links abbiegen auf %{name}
+        slight_left_without_exit: Leicht links auf %{name}
+        via_point_without_exit: (über Punkt)
+        follow_without_exit: '%{name} folgen'
+        roundabout_without_exit: Im Kreisverkehr nehme %{name}
+        leave_roundabout_without_exit: Kreisverkehr verlassen – %{name}
+        stay_roundabout_without_exit: Auf Kreisverkehr bleiben – %{name}
+        start_without_exit: Starten beim Ende von %{name}
+        destination_without_exit: Ziel erreicht
+        against_oneway_without_exit: Gegen die Einbahnstraße gehen auf %{name}
+        end_oneway_without_exit: Ende der Einbahnstraße auf %{name}
+        roundabout_with_exit: Beim Kreisverkehr nehme die Ausfahrt %{exit} auf %{name}
+        unnamed: unbekannt
         courtesy: Routenanweisungen stammen von %{link}
       time: Zeit
     query:
       node: Knoten
       way: Weg
       relation: Relation
-      nothing_found: Keine Funktionen gefunden
+      nothing_found: Keine Objekte gefunden
       error: 'Fehler beim Kontaktieren von %{server}: %{error}'
       timeout: Zeitüberschreitung beim Kontaktieren von %{server}
   redaction:

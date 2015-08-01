@@ -1110,6 +1110,14 @@ en:
       tag_html: |
         A <strong>tag</strong> is a bit of data about a node or way, like a
         restaurant's name or a road's speed limit.
+    rules:
+      title: Rules!
+      paragraph_1_html: |
+        OpenStreetMap has few formal rules but we expect all participants to collaborate
+        with, and communicate with, the community. If you are considering
+        any activities other than editing by hand, please read and follow the guidelines on 
+        <a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Imports</a> and 
+        <a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Automated Edits</a>.
     questions:
       title: Any questions?
       paragraph_1_html: |
@@ -1418,9 +1426,7 @@ en:
           primary: "Primary road"
           secondary: "Secondary road"
           unclassified: "Unclassified road"
-          unsurfaced: "Unsurfaced road"
           track: "Track"
-          byway: "Byway"
           bridleway: "Bridleway"
           cycleway: "Cycleway"
           footway: "Footway"
@@ -1444,7 +1450,6 @@ en:
           golf: "Golf course"
           park: "Park"
           resident: "Residential area"
-          tourist: "Tourist attraction"
           common:
             - Common
             - meadow
@@ -1474,7 +1479,6 @@ en:
           tunnel: "Dashed casing = tunnel"
           bridge: "Black casing = bridge"
           private: "Private access"
-          permissive: "Permissive access"
           destination: "Destination access"
           construction: "Roads under construction"
     richtext_area:
@@ -2100,6 +2104,8 @@ en:
       heading: "%{block_on} blocked by %{block_by}"
       time_future: "Ends in %{time}"
       time_past: "Ended %{time} ago"
+      created: "Created"
+      ago: "%{time} ago"
       status: "Status"
       show: "Show"
       edit: "Edit"
@@ -2149,6 +2155,7 @@ en:
       link: "Link or HTML"
       long_link: "Link"
       short_link: "Short Link"
+      geo_uri: "Geo URI"
       embed: "HTML"
       custom_dimensions: "Set custom dimensions"
       format: "Format:"
@@ -2227,25 +2234,25 @@ en:
         no_route: "Couldn't find a route between those two places."
         no_place: "Sorry - couldn't find that place."
       instructions:
-        continue_on: Continue on
-        slight_right: Slight right onto
-        turn_right: Turn right onto
-        sharp_right: Sharp right onto
-        uturn: U-turn along
-        sharp_left: Sharp left onto
-        turn_left: Turn left onto
-        slight_left: Slight left onto
-        via_point: (via point)
-        follow: Follow
-        roundabout: At roundabout take
-        leave_roundabout: Leave roundabout -
-        stay_roundabout: Stay on roundabout -
-        start: Start at end of
-        destination: Reach destination
-        against_oneway: Go against one-way on
-        end_oneway: End of one-way on
-        exit: exit %{exit}
-        unnamed: "(unnamed)"
+        continue_without_exit: Continue on %{name}
+        slight_right_without_exit: Slight right onto %{name}
+        turn_right_without_exit: Turn right onto %{name}
+        sharp_right_without_exit: Sharp right onto %{name}
+        uturn_without_exit: U-turn along %{name}
+        sharp_left_without_exit: Sharp left onto %{name}
+        turn_left_without_exit: Turn left onto %{name}
+        slight_left_without_exit: Slight left onto %{name}
+        via_point_without_exit: (via point)
+        follow_without_exit: Follow %{name}
+        roundabout_without_exit: At roundabout take %{name}
+        leave_roundabout_without_exit: Leave roundabout - %{name}
+        stay_roundabout_without_exit: Stay on roundabout - %{name}
+        start_without_exit: Start at end of %{name}
+        destination_without_exit: Reach destination
+        against_oneway_without_exit: Go against one-way on %{name}
+        end_oneway_without_exit: End of one-way on %{name}
+        roundabout_with_exit: At roundabout take exit %{exit} onto %{name}
+        unnamed: "unnamed road"
         courtesy: "Directions courtesy of %{link}"
       time: "Time"
     query:

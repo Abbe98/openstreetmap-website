@@ -1116,6 +1116,14 @@ mk:
         или објект (здание).
       tag_html: <strong>Ознака</strong> е податок за јазол или пат, како на пр. име
         на ресторан или дозволената брзина на улица.
+    rules:
+      title: Правила!
+      paragraph_1_html: "OpenStreetMap има само малку формални правила, но очекуваме
+        сите учесници да соработуваат и општат со заедницата. Доколку имате на ум
+        други активности освен рачно уредување, прочитајте и проследете го упатството
+        \n<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Увоз</a>
+        и \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Автоматизирани
+        уредувања</a>."
     questions:
       title: Имате прашања?
       paragraph_1_html: |-
@@ -1168,20 +1176,16 @@ mk:
       description: Поставете прашање или побарајте во одговорите на порталот за прашања
         и одговори на OSM.
     mailing_lists:
-      url: http://lists.openstreetmap.org/
       title: Поштенски списоци
       description: Поставете прашање или разговарајте за интересни прашања на широк
         опсег на тематски и регионални поштенски списоци.
     forums:
-      url: http://forum.openstreetmap.org/
       title: Форуми
       description: Прашања и разговори за оние кои претпочитаат да општат со објави.
     irc:
-      url: http://irc.openstreetmap.org/
       title: IRC
       description: Разговор во живо на најразлични јазици и на многу теми.
     switch2osm:
-      url: https://switch2osm.org/
       title: Преод на OSM
       description: Помош за претпријатија и организации кои преоѓаат на  карти на
         OpenStreetMap и други услуги.
@@ -2215,6 +2219,8 @@ mk:
       heading: '%{block_on} блокиран од %{block_by}'
       time_future: Уредувања во %{time}
       time_past: Истечено пред %{time}
+      created: Создадено
+      ago: пред %{time}
       status: Статус
       show: Прикажи
       edit: Уреди
@@ -2265,6 +2271,7 @@ mk:
       link: Врска или HTML
       long_link: Врска
       short_link: Кратка врска
+      geo_uri: ГЕО-URI
       embed: HTML
       custom_dimensions: Димензии по ваш избор
       format: 'Формат:'
@@ -2349,25 +2356,25 @@ mk:
         no_route: Не можев да најдам маршрута помеѓу тие две места.
         no_place: За жал, не можев да го најдам тоа место.
       instructions:
-        continue_on: Продолжи
-        slight_right: Малку надесно во
-        turn_right: Свртете десно во
-        sharp_right: Остро надесно во
-        uturn: Полукружно свртете долж
-        sharp_left: Остро налево во
-        turn_left: Свртете лево во
-        slight_left: Малку налево во
-        via_point: (преку точката)
-        follow: Следи
-        roundabout: На кружниот тек свртете
-        leave_roundabout: Напуштете го кружниот тек —
-        stay_roundabout: Останете на кружниот тек —
-        start: Почнете на крајот од
-        destination: Стигнавте на одредиштето
-        against_oneway: Оди обратно во еднонасочната
-        end_oneway: Крај на еднонасочната
-        exit: излези од %{exit}
-        unnamed: (неименувано)
+        continue_without_exit: Продолжете на %{name}
+        slight_right_without_exit: Малку надесно во %{name}
+        turn_right_without_exit: Свртете десно во %{name}
+        sharp_right_without_exit: Остро надесно во %{name}
+        uturn_without_exit: Полукружно свртете долж %{name}
+        sharp_left_without_exit: Остро налево во %{name}
+        turn_left_without_exit: Свртете лево во %{name}
+        slight_left_without_exit: Малку налево во %{name}
+        via_point_without_exit: (преку точката)
+        follow_without_exit: Следете го %{name}
+        roundabout_without_exit: На кружниот тек свртете на %{name}
+        leave_roundabout_without_exit: Напуштете го кружниот тек — %{name}
+        stay_roundabout_without_exit: Останете на кружниот тек — %{name}
+        start_without_exit: Почнете на крајот од %{name}
+        destination_without_exit: Стигнавте на одредиштето
+        against_oneway_without_exit: Оди обратно во еднонасочната на %{name}
+        end_oneway_without_exit: Крај на еднонасочната на %{name}
+        roundabout_with_exit: На кружниот тек, свртете на %{exit} излегувајќи на %{name}
+        unnamed: неименувано
         courtesy: Насоките ги добивте благодарение на %{link}
       time: Време
     query:

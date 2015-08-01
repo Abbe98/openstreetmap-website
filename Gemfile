@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Require rails
-gem "rails", "4.2.1"
+gem "rails", "4.2.3"
 
 # Sprockets 3 seems to be buggy, so stick with 2 for now
 gem "sprockets", "~> 2.12.3"
@@ -50,7 +50,7 @@ gem "composite_primary_keys", "~> 8.1.0"
 gem "http_accept_language", "~> 2.0.0"
 gem "paperclip", "~> 4.0"
 gem "deadlock_retry", ">= 1.2.0"
-gem "openstreetmap-i18n-js", ">= 3.0.0.rc5.3", :require => "i18n-js"
+gem "i18n-js", ">= 3.0.0.rc10"
 gem "rack-cors"
 gem "actionpack-page_caching"
 
@@ -84,6 +84,9 @@ gem "soap4r-ruby1.9"
 # Load memcache client in case we are using it
 gem "dalli"
 gem "kgio"
+
+# Used to generate logstash friendly log files
+gem "logstasher"
 
 # Gems useful for development
 group :development do

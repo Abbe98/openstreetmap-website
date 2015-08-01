@@ -610,6 +610,8 @@ lb:
     title: Wëllkomm!
     whats_on_the_map:
       title: Wat ass op der Kaart
+    rules:
+      title: Regelen!
     questions:
       title: Nach Froen?
     add_a_note:
@@ -639,10 +641,7 @@ lb:
     forums:
       title: Forumen
     irc:
-      url: http://irc.openstreetmap.org/
       title: IRC
-    switch2osm:
-      url: https://switch2osm.org/
     wiki:
       url: http://wiki.openstreetmap.org/
       title: wiki.openstreetmap.org
@@ -1124,6 +1123,7 @@ lb:
     show:
       title: '%{block_on} gespaart vum %{block_by}'
       heading: '%{block_on} gespaart vum %{block_by}'
+      ago: viru(n) %{time}}
       status: Status
       show: Weisen
       edit: Änneren
@@ -1183,9 +1183,13 @@ lb:
       directions: Richtungen
       distance: Distanz
       instructions:
-        continue_on: Weider op
-        exit: aus %{exit} erausgoen
-        unnamed: (ouni Numm)
+        continue_without_exit: Virun op %{name}
+        sharp_right_without_exit: Schaarf riets op %{name}
+        sharp_left_without_exit: Schaarf lénks op %{name}
+        via_point_without_exit: (iwwer de Punkt)
+        leave_roundabout_without_exit: Aus dem Kreesverkéier erausgoen - %{name}
+        stay_roundabout_without_exit: Am Kreesverkéier bleiwen - %{name}
+        unnamed: Strooss ouni Numm
       time: Zäit
     query:
       way: Wee

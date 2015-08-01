@@ -13,6 +13,7 @@ window.onload = function () {
 
   var map = L.map("map");
   map.attributionControl.setPrefix('');
+  map.removeControl(map.attributionControl);
 
   if (!args.layer || args.layer === "mapnik" || args.layer === "osmarender") {
     new L.OSM.Mapnik().addTo(map);
@@ -43,4 +44,31 @@ window.onload = function () {
   } else {
     map.fitWorld();
   }
+
+  map.addControl(new L.Control.OSMReportAProblem());
 };
+
+L.Control.OSMReportAProblem = L.Control.Attribution.extend({
+  options: {
+    position: 'bottomright',
+    prefix: '<a href="http://www.openstreetmap.org/fixthemap?lat={x}&lon={y}&zoom={z}">Report a problem</a>'
+  },
+
+  onAdd: function (map) {
+    var container = L.Control.Attribution.prototype.onAdd.call(this, map);
+
+    map.on('moveend', this._update, this);
+
+    return container;
+  },
+
+  _update: function () {
+    L.Control.Attribution.prototype._update.call(this);
+
+    this._container.innerHTML =
+      this._container.innerHTML
+        .replace('{x}', this._map.getCenter().lat)
+        .replace('{y}', this._map.getCenter().lng)
+        .replace('{z}', this._map.getZoom());
+  }
+});

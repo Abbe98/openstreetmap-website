@@ -588,7 +588,7 @@ pt-PT:
           street_lamp: Poste de Iluminação
           tertiary: Estrada Terciária
           tertiary_link: Nó de ligação a uma Estrada Terciária
-          track: Estrada Florestal ou Agrícula
+          track: Estrada Florestal ou Agrícola
           traffic_signals: Semáforo
           trail: Trilho
           trunk: Via Rápida
@@ -1179,21 +1179,17 @@ pt-PT:
       description: Coloque uma questão ou procure por respostas no fórum de perguntas
         e respostas do OpenStreetMap.
     mailing_lists:
-      url: http://lists.openstreetmap.org/
       title: Listas de discussão
       description: Faça uma pergunta ou discuta sobre temas interessantes numa vasta
         gama de listas de discussão regionais e temáticas.
     forums:
-      url: http://forum.openstreetmap.org/
       title: Fóruns
       description: Questões e discussões para quem preferir uma área na internet do
         tipo fórum.
     irc:
-      url: http://irc.openstreetmap.org/
       title: IRC
       description: Sala de discussão IRC em várias línguas e vários tópicos.
     switch2osm:
-      url: https://switch2osm.org/
       title: switch2osm
       description: Informações para empresas e organizações que queiram mudar para
         os mapas do OpenStreetMap e outros serviços.
@@ -2368,25 +2364,7 @@ pt-PT:
         no_route: Não foi encontrada uma rota entre os dois pontos.
         no_place: Desculpe - não foi possível encontrar esse local.
       instructions:
-        continue_on: Continuar na
-        slight_right: Virar um pouco à direita para a
-        turn_right: Virar à esquerda para a
-        sharp_right: Viragem brusca à esquerda para a
-        uturn: Inverter a marcha na
-        sharp_left: Virar ligeiramente à esquerda para a
-        turn_left: Virar à esquerda para a
-        slight_left: Virar um pouco à esquerda para a
-        via_point: (através do nó)
-        follow: Siga a
-        roundabout: Na rotunda siga a
-        leave_roundabout: Saia da rotunda -
-        stay_roundabout: Mantenha-se na rotunda -
-        start: Começar no final da
-        destination: Chegada ao destino
-        against_oneway: Ir no sentido contrário a
-        end_oneway: Final de via sentido único em
-        exit: sair em %{exit}
-        unnamed: (sem nome)
+        unnamed: sem nome
         courtesy: Direções fornecidas por %{link}
       time: Tempo
     query:
